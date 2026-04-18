@@ -23,6 +23,7 @@ Currently, I am exploring surgical vision foundation models designed to learn sh
 
 News
 ======
+1. [Apr 2026] Our paper "Evaluating Large Vision–language Models for Surgical Tool Detection” has been accepted for presentation at the 48th [Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)](https://embc.embs.org/2026/) held in Toronto, Canada.
 1. [Dec 2025] Our paper "Assessing Learning-Based Reconstructed Liver Surfaces from Partial Point Clouds for Improving Pre- to Intra-Operative 3D–3D Registration”
 has been published in Wiley's IET Healthcare Technology Letters journal.
 1. [Aug 2025] Accepted to present my research titled “Assessing Learning-Based Reconstructed Liver Surfaces from Partial Point Clouds for Improving Pre- to Intra-Operative 3D–3D Registration” at the [AE-CAI Workshop](https://workshops.ap-lab.ca/aecai2025/) at the [Medical Image Computing and Computer-Assisted Intervention (MICCAI)](https://conferences.miccai.org/2025/en/) 2025 in Daejeon, South Korea.
