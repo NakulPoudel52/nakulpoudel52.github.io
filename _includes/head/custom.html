@@ -1,5 +1,17 @@
 {% include base_path %}
 
+<!-- Apply a saved or system theme before first paint. The nav toggle persists the choice in localStorage. -->
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem("theme");
+      var systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var useDark = saved === "dark" || (saved !== "light" && systemDark);
+      if (useDark) document.documentElement.setAttribute("data-theme", "dark");
+    } catch (e) {}
+  })();
+</script>
+
 <!-- start custom head snippets -->
 
 <!-- Support for Academicons -->

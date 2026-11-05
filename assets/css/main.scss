@@ -36,8 +36,38 @@
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
+    "layout/home",
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ site.baseurl }}/assets/fonts/inter/inter-latin-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ site.baseurl }}/assets/fonts/inter/inter-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ site.baseurl }}/assets/fonts/inter/inter-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("{{ site.baseurl }}/assets/fonts/inter/inter-latin-700.woff2") format("woff2");
+}

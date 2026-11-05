@@ -9,7 +9,7 @@ $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
-$background                 : #474747;
+$background                 : #14171c;
 $background-light           : mix(#fff, $background, 80%);
 $background-lighter         : mix(#fff, $background, 90%);
 $text                       : #ffffff;
@@ -39,8 +39,8 @@ html[data-theme="dark"] {
     --global-base-color                 : #{$primary-color};
     --global-bg-color                   : #{$background};
     --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
-    --global-dark-border-color          : #{$background-light};
+    --global-border-color               : #2c343f;
+    --global-dark-border-color          : #3a4452;
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : #{$light-gray};
