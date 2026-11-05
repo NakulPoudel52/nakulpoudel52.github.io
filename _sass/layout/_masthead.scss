@@ -27,7 +27,17 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.5em 1em;
+    padding: 0.5em 1.5rem;
+
+    @include breakpoint($medium) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    @include breakpoint($large) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
