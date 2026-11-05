@@ -1,0 +1,111 @@
+{% include base_path %}
+
+<div class="home">
+  <section class="home-hero" aria-label="Introduction">
+    <h1 class="home-hero__name">Nakul Poudel</h1>
+    <p class="home-hero__headline">PhD candidate building AI for image-guided surgery · graduating July 2027</p>
+    <img
+      class="home-hero__photo"
+      src="{{ base_path }}/images/nakul.jpeg"
+      width="200"
+      height="188"
+      alt="Nakul Poudel"
+    >
+    <div class="home-actions">
+      <a class="home-btn home-btn--primary" href="{{ base_path }}/files/Nakul_CV_web.pdf">
+        <i class="fa-solid fa-file-lines" aria-hidden="true"></i> CV
+      </a>
+      <a class="home-btn" href="{{ site.author.googlescholar }}">
+        <i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar
+      </a>
+      <a class="home-btn" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
+        <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+      </a>
+      <a class="home-btn" href="https://github.com/{{ site.author.github }}">
+        <i class="fab fa-github" aria-hidden="true"></i> GitHub
+      </a>
+      <a class="home-btn" href="mailto:{{ site.author.email }}">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email
+      </a>
+    </div>
+  </section>
+
+  <section class="home-section home-about" aria-labelledby="about-heading">
+    <h2 id="about-heading">About</h2>
+    <p>I am a fourth-year PhD student at the <a href="https://www.rit.edu/science/chester-f-carlson-center-imaging-science">Chester F. Carlson Center for Imaging Science</a> at the Rochester Institute of Technology, expected to graduate in July 2027. I work with <a href="https://www.rit.edu/directory/calbme-cristian-linte">Dr. Cristian A. Linte</a> in the Biomedical Modeling, Visualization, and Image-Guided Navigation (BiMVisGN) Lab. My research develops deep learning for medical imaging and surgical data: registration of preoperative and intraoperative images and surfaces, organ-surface completion from sparse, partial, and noisy observations, and segmentation and detection of anatomy and surgical instruments, including under non-canonical poses, partial visibility, noise, and shifts between imaging modalities.</p>
+    <p>Beyond single-task models, I am exploring surgical vision foundation models that learn shared representations across tasks and domains. Combining large-scale pretraining, multi-task learning, and vision–language modeling, the aim is one architecture that can interpret surgical scenes, recognize tools and tool–tissue interactions, identify phases and steps, and support skill and error assessment, toward context-aware assistance that improves intraoperative decisions and patient safety. Before the PhD I earned a bachelor’s degree in Computer Engineering from <a href="https://sagarmatha.edu.np/">Sagarmatha Engineering College</a>, affiliated with Tribhuvan University. Outside research I enjoy traveling, exploring new places, hiking, and experiencing different cultures.</p>
+    <ul class="topic-tags" aria-label="Research topics">
+      <li>3D-3D registration</li>
+      <li>point-cloud completion</li>
+      <li>surgical instrument segmentation</li>
+      <li>vision-language models</li>
+      <li>surgical foundation models</li>
+    </ul>
+  </section>
+
+  <section class="home-section" aria-labelledby="research-heading">
+    <h2 id="research-heading">Featured research</h2>
+    <div class="research-grid">
+      <article class="research-card">
+        <p class="research-card__venue">MIUA 2025</p>
+        <h3><a href="{{ base_path }}/publication/2015-10-01-paper-title-number-3">Toward patient-specific partial point cloud to surface completion for pre- to intra-operative registration in image-guided liver interventions</a></h3>
+        <p class="research-card__takeaway">On two liver phantoms, completing a 30% visible surface lowered target registration error from 33.13 ± 13.89 mm and 39.87 ± 15.07 mm to 5.19 ± 1.34 mm and 3.35 ± 0.61 mm.</p>
+        <p class="research-card__links">
+          <a href="https://link.springer.com/content/pdf/10.1007/978-3-031-98691-8_22.pdf?pdf=inline%20link">Paper</a>
+        </p>
+      </article>
+
+      <article class="research-card">
+        <p class="research-card__venue">Healthcare Technology Letters, 2025</p>
+        <h3><a href="{{ base_path }}/publication/2010-10-01-paper-title-number-2">Assessing learning-based reconstructed liver surfaces from partial point clouds for improving pre- to intra-operative 3D to 3D registration</a></h3>
+        <p class="research-card__takeaway">Error in the completed liver surface is larger farther from the visible region and can mislead both rigid and non-rigid registration, including inside the camera’s field of view.</p>
+        <p class="research-card__links">
+          <a href="https://ietresearch.onlinelibrary.wiley.com/doi/pdfdirect/10.1049/htl2.70041?download=true">Paper</a>
+        </p>
+      </article>
+
+      <article class="research-card">
+        <p class="research-card__venue">IEEE EMBC 2026</p>
+        <h3><a href="{{ base_path }}/publication/2024-02-17-paper-title-number-4">Evaluating large vision-language models for surgical tool detection</a></h3>
+        <p class="research-card__takeaway">Of Qwen2.5, LLaVA1.5, and InternVL3.5, Qwen2.5 was the strongest surgical-tool detector: better instrument recognition than Grounding DINO, which localized more accurately.</p>
+        <p class="research-card__links">
+          <a href="https://arxiv.org/pdf/2601.16895">Paper</a>
+        </p>
+      </article>
+
+      <article class="research-card">
+        <p class="research-card__venue">MIUA 2026</p>
+        <h3><a href="{{ base_path }}/publication/2026-06-04-sam3-surgical-instrument-segmentation">Toward mask annotation-free surgical instrument segmentation from endoscopic images using text-prompted Segment Anything Model 3 (SAM3)</a></h3>
+        <p class="research-card__takeaway">Prompting SAM3 with “tool,” then classifying those masks with Qwen, segments instruments without mask annotations and beats instrument-name prompts, while still trailing fully supervised methods.</p>
+        <p class="research-card__links">
+          <a href="https://arxiv.org/pdf/2608.08844">Paper</a>
+        </p>
+      </article>
+    </div>
+    <p class="home-more"><a href="{{ base_path }}/publications/">All publications</a></p>
+  </section>
+
+  <section class="home-section" aria-labelledby="news-heading">
+    <h2 id="news-heading">News</h2>
+    <ul class="news-list is-collapsed" id="news-list" data-news-list>
+      <li><time datetime="2026-08-07">Aug 7, 2026</time> Successfully completed my three-month internship at <a href="https://www.nvidia.com/">NVIDIA</a> as a Camera Software and Image Quality Intern.</li>
+      <li><time datetime="2026-06-04">Jun 4, 2026</time> Our paper, “Toward Mask Annotation-Free Surgical Instrument Segmentation from Endoscopic Images Using Text-Prompted Segment Anything Model 3 (SAM3),” has been accepted for publication at the 30th <a href="https://www.ucd.ie/medicine/miua2026/">Conference on Medical Image Understanding and Analysis (MIUA)</a>, held in Dublin, Ireland.</li>
+      <li><time datetime="2026-04">Apr 2026</time> Our paper “Evaluating Large Vision–language Models for Surgical Tool Detection” has been accepted for presentation at the 48th <a href="https://embc.embs.org/2026/">Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</a> held in Toronto, Canada.</li>
+      <li><time datetime="2025-12">Dec 2025</time> Our paper “Assessing Learning-Based Reconstructed Liver Surfaces from Partial Point Clouds for Improving Pre- to Intra-Operative 3D–3D Registration” has been published in Wiley's IET Healthcare Technology Letters journal.</li>
+      <li><time datetime="2025-08">Aug 2025</time> Accepted to present my research titled “Assessing Learning-Based Reconstructed Liver Surfaces from Partial Point Clouds for Improving Pre- to Intra-Operative 3D–3D Registration” at the <a href="https://workshops.ap-lab.ca/aecai2025/">AE-CAI Workshop</a> at the <a href="https://conferences.miccai.org/2025/en/">Medical Image Computing and Computer-Assisted Intervention (MICCAI)</a> 2025 in Daejeon, South Korea.</li>
+      <li class="news-extra"><time datetime="2025-07">July 2025</time> Delivered an oral presentation of our paper, “Toward Patient-Specific Partial Point Cloud to Surface Completion for Pre- to Intra-Operative Registration in Image-Guided Liver Interventions”, at the <a href="https://conferences.leeds.ac.uk/miua/">Medical Image Understanding and Analysis (MIUA)</a> 2025 held at the <a href="https://www.leeds.ac.uk/">University of Leeds</a>, Leeds, UK.</li>
+      <li class="news-extra"><time datetime="2025-05">May 2025</time> Excited to share that our paper, “Toward Patient-Specific Partial Point Cloud to Surface Completion for Pre- to Intra-Operative Registration in Image-Guided Liver Interventions”, has been accepted at the <a href="https://conferences.leeds.ac.uk/miua/">Medical Image Understanding and Analysis (MIUA)</a> Annual Conference!</li>
+      <li class="news-extra"><time datetime="2025-02">Feb 2025</time> Presented our paper as a poster presentation at SPIE Medical Imaging 2025, held in San Diego, California, USA.</li>
+      <li class="news-extra"><time datetime="2024-10">Oct 2024</time> Our paper titled “Evaluation of Intraoperative Patient-Specific Methods for Point Cloud Completion for Minimally Invasive Liver Interventions” has been accepted to SPIE Medical Imaging 2025.</li>
+      <li class="news-extra"><time datetime="2024-05">May 2024</time> Appointed as Treasurer of the <a href="https://campusgroups.rit.edu/nsarit/home/">Nepalese Student Association</a> at the Rochester Institute of Technology.</li>
+      <li class="news-extra"><time datetime="2023-08">Aug 2023</time> Started my PhD in Imaging Science at the Rochester Institute of Technology, Rochester, United States.</li>
+      <li class="news-extra"><time datetime="2022-07">July 2022</time> Graduated with a Bachelor’s degree in Computer Engineering from <a href="https://sagarmatha.edu.np">Sagarmatha Engineering College</a>, affiliated with Tribhuvan University, Nepal.</li>
+      <li class="news-extra"><time datetime="2022-04">April 2022</time> <a href="https://www.facebook.com/share/p/17GnQRyPzD/">Selected</a> for the Erasmus+ program to study a semester at UPCT Universidad Politécnica de Cartagena.</li>
+      <li class="news-extra"><time datetime="2020-06">June 2020</time> Our team “Matrix” secured <a href="https://www.facebook.com/story.php?story_fbid=3022269811172201&id=100063642486901">First Runner-Up</a> position in the Hack for Good Online Hackathon organized by Sagarmatha Engineering College, Kathmandu, Nepal.</li>
+    </ul>
+    <button class="news-toggle" type="button" data-news-toggle aria-expanded="false" aria-controls="news-list">Show earlier news</button>
+    <noscript>
+      <style>.news-list.is-collapsed .news-extra { display: list-item !important; }</style>
+    </noscript>
+  </section>
+</div>
