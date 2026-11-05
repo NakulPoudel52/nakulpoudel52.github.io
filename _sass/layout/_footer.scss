@@ -33,7 +33,17 @@
     margin-right: auto;
     margin-top: 1em;
     max-width: 100%;
-    padding: 0 1em 1em;
+    padding: 0 1.5rem 1em;
+
+    @include breakpoint($medium) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    @include breakpoint($large) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
 
     @include breakpoint($x-large) {
       max-width: $x-large;
