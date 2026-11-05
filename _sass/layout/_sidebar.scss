@@ -58,6 +58,14 @@
   img {
     width: 100%;
   }
+
+  > div {
+    padding: 1rem 1rem 0.4rem;
+    border: 1px solid var(--surface-border-color);
+    border-radius: 16px;
+    background: var(--surface-color);
+    box-shadow: var(--surface-shadow);
+  }
 }
 
 .sidebar__right {
@@ -295,7 +303,7 @@
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
-    border-color: #fff transparent;
+      border-color: var(--global-bg-color) transparent;
     z-index: 1;
 
     @include breakpoint($large) {
@@ -304,7 +312,7 @@
   }
 
   li {
-    white-space: nowrap;
+    white-space: normal;
   }
 
   a {
