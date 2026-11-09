@@ -60,6 +60,31 @@
   font-size: $type-size-4;
 }
 
+.blog-figure {
+  max-width: 800px;
+  margin: 1.75rem auto;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid var(--surface-border-color, var(--global-border-color));
+    border-radius: 16px;
+    background: var(--surface-color, var(--global-bg-color));
+  }
+
+  figcaption {
+    margin-top: 0.75rem;
+    color: var(--surface-muted-color, var(--global-text-color-light));
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
+
 .page__content {
 
   h2 {

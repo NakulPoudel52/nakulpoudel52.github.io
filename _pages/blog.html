@@ -1,0 +1,23 @@
+---
+layout: archive
+title: "Blog"
+permalink: /blog/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% if site.posts.size == 0 %}
+  <p>No posts yet.</p>
+{% endif %}
+
+{% for post in site.posts %}
+  <div class="list__item">
+    <article class="archive__item">
+      <h2 class="archive__item-title"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="page__meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %d, %Y" }}</time>{% if post.author %} · {{ post.author }}{% endif %}</p>
+      <p class="archive__item-excerpt">{{ post.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 240 }}</p>
+      <p><a href="{{ base_path }}{{ post.url }}">Read</a></p>
+    </article>
+  </div>
+{% endfor %}
