@@ -26,12 +26,15 @@
   }
 }
 
+body:not(.layout-home) #main {
+  max-width: 1000px;
+}
+
 .page {
-  @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
-  }
+  width: 100%;
+  float: none;
+  margin-left: 0;
+  margin-right: 0;
 
   .page__inner-wrap {
     @include full();
